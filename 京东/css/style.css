@@ -1,0 +1,726 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: #000;
+    padding-top: 5px;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    padding-left: 0px;
+}
+.clearfix:after{
+    clear: both;  
+    display: table;
+    content: "";
+}
+/*京东选项卡*/
+
+
+
+
+nav ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+nav li .fa{
+    font-size: 24px;
+    display: block;
+    position: relative;
+}
+
+nav .active a,nav ul li a:hover {
+    color: #f12929;
+    text-decoration: none;     
+}
+
+nav ul{
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    border-top: 1px #ddd solid;
+    padding-top: 10px;
+    z-index: 100;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.hot{
+    width: 10px;
+    height: 10px;
+    background-color:#f12929;        
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+}
+
+/*京东选项卡*/
+
+/*京东搜索*/
+
+
+.search{
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 100;
+/*    transition: 0.5s;*/
+}
+
+.search div{
+    float: left;
+    color: #fff;
+    text-align: center;
+    
+}
+.search .left,.search .right{
+    width: 20%;
+}
+
+.search .center{
+    width: 60%;
+    position: relative;
+}
+
+.search .center input{
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 36px;
+    color: #9b9b9b;
+    outline: none;
+}
+
+.search .left  i,.search .right i{
+    font-size: 24px;
+    display: block;
+}
+
+.search span{
+    font-size: 13px;
+}
+
+.search .center i{
+   font-size: 20px;
+    color: #9b9b9b;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+}
+
+.search .center i:nth-of-type(2){
+    left: auto;
+    right: 15px;
+}
+.gb,.gb p{
+    padding:0;
+    margin:0;
+}
+.gb>div{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+.gb div:nth-of-type(1){
+    width: 70%;
+    background: #000000;
+}
+.gb div:nth-of-type(2){
+    width: 30%;
+    background: red;
+}
+.gb span{
+    padding:10px;
+}
+/*京东搜索*/
+
+
+/*banner*/
+
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+.banner .swiper-wrapper,.banner img{
+    width: 100%;
+} 
+
+/*小圆点默认状态*/
+.banner .swiper-pagination-bullet {
+    background: #fffefe;
+    opacity: .4;
+    width: 15px;
+    height: 4px;
+    display: inline-block;
+     border-radius: 0; 
+}
+
+/*小圆点焦点上状态*/
+.banner .swiper-pagination-bullet-active {
+    opacity: 1;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px #fff solid;
+    position: relative;
+    top: 4px;
+}
+
+
+/*banner*/
+
+
+/*京东App*/
+
+
+.main .img ul li img{
+    
+    width:100%;
+}
+.main .img ul li{
+    width: 20%;
+    float: left;
+    padding:0px 10px;
+}
+
+.main .img a{
+    color: #848689;
+}
+
+.main .img h5{
+    font-size: 13px;
+}
+
+.img{
+    background-color: #f5f5f5;
+    border-radius:10px 10px 0px 0px;
+    position: relative;
+    margin-top: -10px;
+    padding-top: 20px;
+    z-index: 100 ;
+}
+
+.btn div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+.d1{
+    background-color: #111111;
+}
+
+.d2{
+    background-color: #999999;
+}
+
+/*京东App*/
+
+/*京东快报*/
+
+.news{
+    margin-top: 10px;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+}
+
+.news div{
+    float: left;
+}
+
+.news .left h3{
+    font-size: 10px;
+    font-weight: 900;
+    color: black;
+    margin:8px 0px 8px 8px;
+}
+
+.news .center{
+    overflow: hidden;
+    height: 23px;
+}
+
+.news .center p span{
+    color: #f15353;
+    margin-right: 5px;
+    
+}
+
+.news .center p{
+    font-size: 7px;
+/*    margin-top: 8px;*/
+    margin:8px 0px 0px 0px;
+}
+
+.news .right {
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+}
+
+.news .right span a{
+    border-left:1px #999999 solid;
+    padding-left: 10px;
+    color: #111111;
+    font-size: 10px;    
+}
+
+/*京东快报*/
+
+/*京东秒杀-top*/
+
+.miao-top{
+    margin-top: 20px;
+}
+
+.miaosha .miao-top .left,.miao-top .left h3 i{
+    float: left;
+}
+
+.miaosha .miao-top .left{
+    background-image: url(../img/miaosha/topbg.jpg);
+    width: 65%;
+    background-size: contain;
+}
+
+.miao-top h3 i{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.miao-top h3 span:nth-of-type(1),.miao-top h3 i{
+    font-size:14px;
+    color: #f02b2b;
+}
+
+.miao-top h3 span:nth-of-type(2){
+    color: black;
+    font-size: 10px;
+}
+
+.miao-top h3{
+    margin: 0px 0px;
+}
+
+.miao-top h3 span:nth-of-type(3),.miao-top h3 span:nth-of-type(4),.miao-top h3 span:nth-of-type(5){
+    font-size: 10px;
+    color: #fff;
+    background-color: black;
+    padding:1px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+
+.miao-top .right{
+    color: #f02b2b;
+}
+
+.miao-top .right h4{
+    font-size: 13px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.miao-top .right i{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*京东秒杀-top*/
+
+/*京东秒杀-bottom*/
+
+.miao-bottom{
+    overflow: scroll;
+
+}
+.miaosha .miao-bottom ul{
+    width:800px;
+    
+}
+
+.miao-bottom ul li{
+    float: left;
+    width: 100px;
+    position: relative;
+}
+
+.miao-bottom ul li img{
+    width: 100%;
+}
+.miao-bottom ul li p{
+    margin: 0;
+    text-align: center;
+    color: #f62d2d;
+}
+
+.miao-bottom ul li p del{
+    color: #ababab;
+}
+
+.miao-bottom ul li .tuijian{
+    background-image: url(../img/miaosha/tuijian.png);
+    height: 16px;
+    width: 46px;
+    background-size: cover;
+    position: absolute;
+    bottom: 50px;
+    left: 26px;
+}
+/*京东秒杀*/
+
+/*好货开头*/
+
+ .row div img{
+    width: 100%;
+}
+
+.f1 h4{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+.f1 p{
+    font-size: 12px;
+    
+}
+.f1 div div{
+    padding: 0px 5px;
+}
+.te{
+    padding-top: 62px;
+}
+ .tit h4{
+    color: #06c0b3;
+}
+
+ .tit2 h4{
+    color: #ff8009;
+}
+ .tit3 h4{
+    color: #dd0ad4;
+}
+
+
+.haohuo .row,.ash .row,.pzss .row,.tstj .row,.gsc .row,.gsc .row,.njxy .row,.fxhd .row,.jdzhibo .row{
+    margin-right: -1px;
+    margin-left: -1px;
+}
+ .row .col-xs-6{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+ .container>div>.row{
+    margin-left: -3px;
+    margin-right: -3px;
+}
+/*好货开头*/
+
+
+/*爱生活*/
+
+.container .row>div p{
+    color: #fa5555;
+    font-size: 12px;
+    width: 100%;
+    letter-spacing: -1.5px;
+}
+
+/*爱生活*/
+
+
+/*左下角小方块*/
+.wuyi{
+    width: 90%;
+    height: 20px;
+    background:-webkit-linear-gradient(left,#ff6c08,#ff4b79);
+}
+.wuyi p a,.wuyi p i{
+    color: #fff;
+    line-height: 21px;
+}
+
+.tits{
+    position: relative;
+}
+.wuyi{
+    position: absolute;
+    bottom: 0px;
+}
+/*左下角小方块*/
+
+
+/*四爱列表*/
+.siai{
+    margin-top: 10px;
+}
+.siai div h4{
+    font-size: 15px;
+}
+/*四爱列表*/
+
+
+/*长条左右划*/
+.dks{
+    overflow: scroll;
+    margin-top: 10px;
+}
+.dks .dk{
+    width: 1800px;
+}
+.dks .dk li{
+    float: left;
+    width:20%;
+    margin-right: 20px;
+}
+.dk li img {
+   width: 100%;
+}
+
+/*长条左右划*/
+
+/*标题背景样式*/
+
+.ash .bt,.pzss .bt,.gsc .bt,.njxy .bt,.tstj .bt,.zhibotit .bt,.fxhd .bt{
+    background-image: url(../img//haohuo/ashbg.jpg);
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f5f5;
+}
+
+.ash .bt h3 ,.pzss .bt h3,.gsc .bt h3,.njxy .bt h3,.tstj .bt h3,.zhibotit .bt h3,.fxhd .bt h3{
+    font-size: 18px;
+    color: #ea5b7d;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.pzss .bt{
+    background-image: url(../img//haohuo/pzbg.jpg);
+}
+
+
+.tstj .bt,.fxhd .bt{
+    background-image: url(../img//haohuo/tstjbg.jpg);
+}
+.njxy .bt{
+    background-image: url(../img/aiguangjie/njxybg.jpg);
+}
+
+/*标题背景样式*/
+
+
+.gsc .col-xs-6,.tstj .col-xs-6,.pzss .col-xs-6,.njxy .col-xs-6,.fxhd .col-xs-6{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.gsc .row,.tstj .row,.pzss .row,.njxy .row,.fxhd .row{
+    margin-left: -3px;
+    margin-right: -3px;
+}
+.wan3c{
+    font-size: 8px;
+}
+
+
+.shu{
+    padding-top: 42px;
+}
+
+
+
+/*农家小院*/
+
+.njxy .row div p{
+    color: #d663e1;
+}
+
+/*农家小院*/
+
+/*发现好店*/
+.fxhd .row>div{
+    padding: 0;
+    
+}
+.fxhd img{
+    padding-right: 5px;
+    padding-top: 5px
+}
+
+.fxhd h4{
+    margin: 8px 0px;
+}
+.fxhd p{
+    margin-bottom: 5px;
+}
+.fxhd .qijin{
+    width: 35%;
+}
+/*发现好店*/
+
+
+/*京东直播*/
+
+.zbxc{
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+}
+.zbxc .swiper-container {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+}
+.zbxc .swiper-slide img{
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+}
+
+/*京东直播*/
+
+/*猜你喜欢*/
+
+#cnxh{
+    padding-bottom: 2000px;
+}
+#cnxh ul li{
+    width: 50%;
+    float: left;
+    padding: 8px;
+}
+#cnxh ul li img{
+    width: 100%;
+}
+
+
+
+/*猜你喜欢*/
+
+
+
+/*返回顶部*/
+
+.topp{
+    display: none;
+    position: fixed;
+    bottom: 75px;
+    right: 10px;
+    width: 20%;
+}
+
+
+/*返回顶部*/
+
+
+
+
+
+/*分类子页面*/
+.sort .fenlei .container-fluid .row{
+    padding-left: -5px;
+    padding-right: -5px;
+
+}
+.sort .fenlei .container-fluid .row .col-xs-3{
+    padding-top: 5px;
+    background: #f5f5f5;
+   padding-left: 5px;
+    padding-right: 5px;
+}
+.sort .xxk li{
+    padding: 11px 0px;
+    text-align: center;
+    
+}
+
+.sort .xxk a  {
+    color: #000;
+}
+.sort .xxk a:hover{
+    text-decoration: none;
+}
+.re{
+    background-color: #fff;
+    color: red;
+}
+
+
+.sort .pics img{
+    margin:5px 5px;
+}
+
+
+
+.fenlei  .col-xs-9>div{
+    display: none;
+    margin-bottom: 10px;
+}
+.fenlei  .col-xs-9>div h4{
+    font-size: 12px;
+    margin:0px 5px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*分类子页面*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

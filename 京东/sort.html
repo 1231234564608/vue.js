@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="sort">
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
+            <li class="active"><a href="sort.html"><i class="fa fa-list"></i><span>搜索</span></a></li>
+            <li><a href="#"><i class="fa fa-dot-circle-o"><i class="hot"></i></i><span>觅Me</span></a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>我的</span></a></li>
+        </ul>
+    </nav>
+    
+    <div class="fenlei" id="list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="xxk">
+                        <a href="#"><li class="re">热门推荐</li></a>
+                        <a href="#"><li>手机数码</li></a>
+                        <a href="#"><li>家用电器</li></a>
+                        <a href="#"><li>电脑办公</li></a>
+                        <a href="#"><li>计生情趣</li></a>
+                        <a href="#"><li>美妆护肤</li></a>
+                        <a href="#"><li>个护清洁</li></a>
+                        <a href="#"><li>汽车用品</li></a>
+                        <a href="#"><li>京东超市</li></a>
+                        <a href="#"><li>男装</li></a>
+                        <a href="#"><li>男鞋</li></a>
+                        <a href="#"><li>女装</li></a>
+                        <a href="#"><li>女鞋</li></a>
+                        <a href="#"><li>母婴童鞋</li></a>
+                        <a href="#"><li>运动户外</li></a>
+                        <a href="#"><li>内衣配饰</li></a>
+                        <a href="#"><li>食品生鲜</li></a>
+                        <a href="#"><li>家具家装</li></a>
+                        <a href="#"><li>箱包手袋</li></a>
+                        <a href="#"><li>钟表珠宝</li></a>
+                        <a href="#"><li>图书音像</li></a>
+<!--
+                        <a href="#"><li>医药保健</li></a>
+                        <a href="#"><li>宠物生活</li></a>
+                        <a href="#"><li>礼品鲜花</li></a>
+                        <a href="#"><li>农资绿植</li></a>
+                        <a href="#"><li>生活旅行</li></a>
+                        <a href="#"><li>奢侈品</li></a>
+                        <a href="#"><li>全球购</li></a>
+                        <a href="#"><li>艺术邮币</li></a>
+                        <a href="#"><li>二手商品</li></a>
+                        <a href="#"><li>特产馆</li></a>
+                        <a href="#"><li>京东金融</li></a>
+                        <a href="#"><li>拍卖</li></a>
+                        <a href="#"><li>房产</li></a>
+-->
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao.jpg"></a>
+                        <div class="row pics">
+                           <h4>热门推荐</h4>
+                            <div class="col-xs-4 text-center" v-for="lis in list0">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <div class="row pics">
+                            <h4>家电热搜</h4>
+                            <div class="col-xs-4 text-center" v-for="lis in list01">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <div class="row pics">
+                            <h4>家电热搜</h4>
+                            <div class="col-xs-4 text-center" v-for="lis in list02">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao1.jpg"></a>
+                        <h4>热门品牌</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list1">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>手机通讯</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list011">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>运营商</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list012">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>手机配件</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list013">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>摄影摄像</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list014">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>影音娱乐</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list015">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                        <h4>数码配件</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list016">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <h4>厨房小电</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list2">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao2.jpg"></a>
+                        <h4>热卖分类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list3">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>计生情趣</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list4">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao3.jpg"></a>
+                        <h4>当季主推</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list5">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>畅销推荐</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list6">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao4.jpg"></a>
+                        <h4>汽车分类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list7">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>个护清洁</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list8">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao4.jpg"></a>
+                        <h4>热卖选购</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list9">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao5.jpg"></a>
+                        <h4>热卖分类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list10">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao6.jpg"></a>
+                        <h4>热卖选购</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list11">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao7.jpg"></a>
+                        <h4>热卖分类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list12">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao8.jpg"></a>
+                        <h4>奶粉</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list13">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao9.jpg"></a>
+                        <h4>运动热门购</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list14">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>热卖品类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list15">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao10.jpg"></a>
+                        <h4>进口食品</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list16">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>热卖推荐</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list17">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao11.jpg"></a>
+                        <h4>热卖分类</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list18">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/surt/guanggao12.jpg"></a>
+                        <h4>钟表</h4>
+                        <div class="row pics">
+                            <div class="col-xs-4 text-center" v-for="lis in list19">
+                                <img :src="lis.img1">
+                                <h5>{{lis.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="topp">
+        <img src="img/10/bang.png">
+    </div>
+    
+    
+    
+    <div id="cnxh"></div>
+    <script src="bootstrap-3.3.4-dist/js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/js.js"></script> 
+</body>
+</html>
