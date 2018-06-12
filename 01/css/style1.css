@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    float: left;
+}
+.left{
+    background-color: aqua;
+    width: 30%;
+}
+.center{
+    background-color: chartreuse;
+    width: 30%;
+}
+.right{
+    background-color: aquamarine;
+    width: 30%;
+}
