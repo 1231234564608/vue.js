@@ -120,13 +120,14 @@ var sousuo=document.querySelector(".search")
 window.onscroll=function(){
     if(sousuo !=null){
         if(document.body.scrollTop>100){
-            gb.style.display="none";
+        sousuo.style.top = "0"
         sousuo.style.backgroundColor="black";
          topp.style.display="inline-block"
     }else{
             gb.style.display="block";
         sousuo.style.backgroundColor="transparent";
         topp.style.display="none"
+            sousuo.style.top = "50px"
     }
     }
     
