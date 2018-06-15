@@ -10,7 +10,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
-<body class="index"> 
+<body class="index">
+    <div class="gb clearfix">
+        <div class="left"><p><span class="xx">X</span>打开京东App,购物更轻松</p></div>
+        <div class="right"><p>立即打开</p></div>
+    </div>
     <nav>
         <ul>
             <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
@@ -20,10 +24,7 @@
             <li><a href="#"><i class="fa fa-user"></i><span>我的</span></a></li>
         </ul>
     </nav>
-    <div class="gb clearfix">
-        <div class="left"><p><span class="xx">X</span>打开京东App,购物更轻松</p></div>
-        <div class="right"><p>立即打开</p></div>
-    </div>
+
     <div class="search clearfix">
                 <div class="left">
                     <i class="fa fa-qrcode"></i>
@@ -830,9 +831,51 @@
     <script src="js/swiper-4.2.6.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/js.js"></script>
-    
-    
-    
-    
+
+
+    <script>
+        //点击关闭广告
+
+
+        var gb=document.querySelector(".gb");
+        console.log(gb)
+        var xx=document.querySelector(".xx")
+        if(sessionStorage.gb == "false"){
+            gb.style.display="none";
+        }else {
+            gb.style.display="block";
+
+        }
+        xx.onclick=function(){
+            gb.style.display="none";
+            sessionStorage.gb="false"
+            // sessionStorage当前网页上的存储，刷新不显示
+        }
+
+        gb.addEventListener("keyup",function(){
+            localStorage.name=gb;
+        })
+        gb=localStorage.name;
+
+        //返回顶部消失和搜索栏背景颜色
+        var topp=document.querySelector(".topp");
+        var sousuo=document.querySelector(".search")
+        var gb=document.querySelector(".gb")
+        window.onscroll=function(){
+            if(sousuo !=null){
+                if(document.body.scrollTop>100){
+                    sousuo.style.top = "0";
+                    sousuo.style.backgroundColor="black";
+                    topp.style.display="inline-block";
+                }else{
+                    sousuo.style.backgroundColor="transparent";
+                    topp.style.display="none";
+                    sousuo.style.top = "auto";
+
+                }
+            }
+
+        }
+    </script>
 </body>
 </html>

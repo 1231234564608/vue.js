@@ -47,105 +47,41 @@ var swiper = new Swiper('.zhibo', {
     });
 
 
-//
-//        
-////倒计时
+
+//倒计时
 //function fun(){
 //        var dateTarget=new Date("2019-6-1 20:30:00");//        目标时间
 //        var newdate=new Date();//当前时间
 //        var dateTargettime=dateTarget.getTime();//目标时间戳
 //        var newdatetime=newdate.getTime()//当前时间戳
 //        var jian=dateTargettime-newdatetime;
-////        console.log(jian)
-//        
+//
 //        var days=Math.floor(jian/(1000*60*60*24));
 //        var daysYu=jian%(1000*60*60*24);
-//            
-//            
+//
 //        var hours=Math.floor(daysYu/(1000*60*60));
 //        var hoursYu=daysYu%(1000*60*60);
-//            
-//            
+//
 //        var mintues=Math.floor(hoursYu/(1000*60));
 //        var miantuesYU=hoursYu%(1000*60);
-//            
-//            
+//
 //        var seconds=Math.floor(miantuesYU/(1000));
-//            
-//        var s=document.querySelector(".miao-top .left .s");            
-//        var f=document.querySelector(".miao-top .left .f");            
-//        var m=document.querySelector(".miao-top .left .m");
-//    
-//    
+//
+//        var s=document.querySelector(".index .miao-top .left .s");
+//        var f=document.querySelector(".index .miao-top .left .f");
+//        var m=document.querySelector(".index .miao-top .left .m");
+//
 //        s.innerHTML=(hours)
 //        f.innerHTML=(mintues)
 //        m.innerHTML=(seconds)
 //}
-//        
 //        fun();
 //        setInterval(function(){
 //            fun();
 //        },1000)
-//
-
-
-
-
-//首页京东秒杀部分的效果（倒计时）
-
-var zxx = {
-    $: function(id){
-        return document.getElementById(id);
-    },
-    futureDate: Date.UTC(2018, 5, 1, 8),
-    obj: function(){
-        return {
-            sec: zxx.$("sec"),
-            mini: zxx.$("mini"),
-            hour: zxx.$("hour"),
-            day: zxx.$("day"),
-            month: zxx.$("month"),
-            year: zxx.$("year")
-        }
-    }
-};
-
-//fnTimeCountDown(zxx.futureDate, zxx.obj());
-
-
-//返回顶部消失和搜索栏背景颜色
-var topp=document.querySelector(".topp");
-var sousuo=document.querySelector(".search")
-        var gb=document.querySelector(".gb")
-window.onscroll=function(){
-    if(sousuo !=null){
-        if(document.body.scrollTop>100){
-        sousuo.style.top = "0"
-        sousuo.style.backgroundColor="black";
-         topp.style.display="inline-block"
-    }else{
-            gb.style.display="block";
-        sousuo.style.backgroundColor="transparent";
-        topp.style.display="none"
-            sousuo.style.top = "50px"
-    }
-    }
-    
-}
-
-//  window.onscroll=function(){
-//        
-//        if(document.body.scrollTop>530){
-//           
-//        }else{
-//            
-//        }
-//    }
-      
 
 
 //vue部分（猜你喜欢）
-
 
 
 new Vue({
@@ -178,7 +114,6 @@ new Vue({
 })
 
 
-
 //返回顶部
 
     var topp=document.querySelector(".topp");
@@ -195,7 +130,7 @@ new Vue({
     var t=setInterval(function(){
         document.body.scrollTop=document.body.scrollTop -20;
 
-document.documentElement.scrollTop=document.documentElement.scrollTop -20;
+        document.documentElement.scrollTop=document.documentElement.scrollTop -20;
 
         if(document.body.scrollTop===0){
             clearInterval(t)
@@ -213,22 +148,11 @@ document.documentElement.scrollTop=document.documentElement.scrollTop -20;
 
 
 
-    
-
 
 
 
 //分类子页面 
 
-
-    
-    
-    
-    
-
-    
-    
-    
 //分类选项卡
 
   new Vue({
@@ -597,20 +521,39 @@ document.documentElement.scrollTop=document.documentElement.scrollTop -20;
               {img1:"img/surt/chu/chu10.jpg",name:"榨汁机"},
               {img1:"img/surt/chu/chu11.jpg",name:"电烤箱"},
               {img1:"img/surt/chu/chu12.jpg",name:"养生壶"}
+          ],
+          list20:[
+              {img1:"img/surt/chu/chu1.jpg",name:"电水壶"},
+              {img1:"img/surt/chu/chu2.jpg",name:"电压力锅"},
+              {img1:"img/surt/chu/chu3.jpg",name:"电饭煲"},
+              {img1:"img/surt/chu/chu4.jpg",name:"电磁炉"},
+              {img1:"img/surt/chu/chu5.jpg",name:"微波炉"},
+              {img1:"img/surt/chu/chu6.jpg",name:"电饼铛"},
+              {img1:"img/surt/chu/chu7.jpg",name:"豆浆机"},
+              {img1:"img/surt/chu/chu8.jpg",name:"多用途锅"},
+              {img1:"img/surt/chu/chu9.jpg",name:"料理机"},
+              {img1:"img/surt/chu/chu10.jpg",name:"榨汁机"},
+              {img1:"img/surt/chu/chu11.jpg",name:"电烤箱"},
+              {img1:"img/surt/chu/chu12.jpg",name:"养生壶"}
           ]
       }
   })
+        //左右滚动条
+     var height= document.documentElement.clientHeight || document.body.clientHeight
 
 
+     var xs3=document.querySelector(".fenlei .row .col-xs-3")
+     var xs9=document.querySelector(".fenlei .row .col-xs-9")
 
-
+     xs3.style.height=height-50+"px"
+     xs9.style.height=height-50+"px"
 
 
 //   选项卡
-    
+    var dxxk=document.querySelector(".xxk")
     var list=document.querySelectorAll(".xxk a li");
     var Ylist=document.querySelectorAll(".fenlei .col-xs-9>div")
-    //Ylist[0].style.display="block"
+    Ylist[0].style.display="block";
     for(var l=0;l<list.length;l++){
         list[l].index=l;
         list[l].onclick=function(){
@@ -624,36 +567,14 @@ document.documentElement.scrollTop=document.documentElement.scrollTop -20;
                 Ylist[this.index].style.display="block";
                 //list[y].classList.add("")
                 //xiugai类名的另一种写法
+            if(dxxk.clientHeight!==document.body.clientHeight){
+
+            }
+            var zouni=this.index*42;
+            dxxk.style.top=-zouni+"px"
         }
+
     }
-
-
-
-
-//点击关闭广告
-
-
-        var gb=document.querySelector(".gb")
-        var xx=document.querySelector(".xx")
-        if(sessionStorage.gb == "false"){
-            gb.style.display="none";
-        }else {
-            gb.style.display="block";
-
-        }
-        xx.onclick=function(){
-            gb.style.display="none";
-            sessionStorage.gb="false"
-           // sessionStorage当前网页上的存储，刷新不显示
-        }
-
-        //gb.addEventListener("keyup",function(){
-        //    localStorage.name=gb;
-        //})
-        //gb=localStorage.name;
-
-
-
 
 
 

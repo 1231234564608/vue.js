@@ -604,9 +604,6 @@ nav ul{
 
 /*猜你喜欢*/
 
-#cnxh{
-    padding-bottom: 2000px;
-}
 #cnxh ul li{
     width: 50%;
     float: left;
@@ -630,6 +627,7 @@ nav ul{
     bottom: 75px;
     right: 10px;
     width: 20%;
+    z-index: 100;
 }
 
 
@@ -651,6 +649,13 @@ nav ul{
    padding-left: 5px;
     padding-right: 5px;
 }
+
+.sort .xxk{
+    position: relative;
+    transition: 1s;
+}
+
+
 .sort .xxk li{
     padding: 11px 0px;
     text-align: center;
@@ -686,19 +691,65 @@ nav ul{
     line-height: 40px;
 }
 
+.fenlei .row .col-xs-3,.fenlei .row .col-xs-9{
+    overflow: scroll;
+}
+.fenlei .row .col-xs-3::-webkit-scrollbar,
+.fenlei .row .col-xs-9::-webkit-scrollbar{
+    display: none;
+}
 
-
-
-
-
-
-
-
+.fenlei .row .col-xs-9 h5{
+    font-size: 12px;
+    font-weight: 400;
+}
 
 
 
 
 /*分类子页面*/
+
+
+
+/*分类子页面2*/
+
+.me .me-top div{
+    float: left;
+}
+.me .me-top .left{
+    width: 30%;
+    padding:10px ;
+    text-align: left;
+}
+.me .me-top .right {
+    width: 30%;
+    padding:10px ;
+    text-align: right;
+}
+.me .me-top .center{
+    width: 40%;
+    text-align: center;
+}
+
+
+.me-xuan ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*分类子页面2*/
 
 
 
