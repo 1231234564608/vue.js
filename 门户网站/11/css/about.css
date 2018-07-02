@@ -1,0 +1,333 @@
+body {
+    line-height: 1.42857143;
+    background: url(../images/mid-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main,.heads{
+    background-color: #fff;
+}
+
+
+
+
+
+header .container,header .navbar-collapse{
+    padding-left: 8px;
+    padding-right: 0px;
+}
+
+header .container > .navbar-header{
+    margin-right: 0px;
+}
+
+header .navbar{
+    border: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    min-height: 100px;
+}
+
+header .navbar-default {
+    background-color: #50bce4;
+}
+
+
+header .navbar-default .navbar-nav{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+header .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+}
+
+header .navbar-default .navbar-nav > .active > a,header .navbar-default .navbar-nav > .active > a:hover{
+    color: #000;
+    background-color: transparent; 
+
+}
+
+
+header .navbar-brand {
+    height: 100px;
+    padding: 0;
+}
+
+header .navbar-form p{
+    float: left;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+header .navbar-form p span{
+    color: #000;
+}
+
+header .navbar-form .form-control {
+    background-color: transparent;
+    width: 200px;
+    border: 1px #fff solid;
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+.banner img{
+    width: 100%;
+}
+.banner .swiper-slide{
+    background-image: url(../images/banner1.jpg);
+    height: 225px;
+    position: relative;
+}
+.banner h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    font-family:Corbel;
+    z-index: 10;
+    text-align: center;
+    padding: 40px 0px;
+    letter-spacing: 6px;
+}
+
+
+
+
+
+.main1{
+    margin-bottom: 50px;
+}
+
+.main1 h1,.main2 h1,.our h1,.meet h1{
+    text-align: center;
+    font-size: 40px;
+    color: #00a3e4;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    
+}
+
+.main1 .row div h3{
+    margin: 0;
+    font-size: 30px;
+    color: #5a5a5a;
+}
+
+.main1 .row div img{
+    width: 100%;
+    box-shadow: 5px 5px 20px #000;
+}
+
+.main1 .row div p{
+    font-size: 15px;
+    margin-top: 35px;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    color: #868585;
+}
+
+
+
+
+.our .says{
+    width: 30%;
+    margin:3% auto;
+    padding: 3% 2%;
+    color: #fff;
+    background-color:rgba(0,0,0,0.4);
+    
+}
+.our h1{
+    color: #fff;
+}
+
+.our .says h2{
+    margin: 0;
+}
+
+.our .says h5{
+    color: #a9ebf2;
+    font-size: 18px;
+}
+
+.our .says p{
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+
+
+.heads{
+    padding: 100px 0px;
+}
+
+
+
+.info .row .col-md-3>div{
+    border: 5px #fff solid;
+    box-shadow: 0px 0px 8px #a9a9a9;
+}
+.info .row .col-md-3{
+    padding: 0px 5px;
+}
+
+.heads .info div img{
+    width: 100%;
+}
+
+
+
+
+.meet{
+    background-color: #f6fafb;
+    
+}
+
+.meet h1{
+    margin-bottom: 10px;
+}
+
+.meet p{
+    color: #6c6d6e;
+    letter-spacing: 2px;
+    
+}
+
+.meet .row {
+    margin: 40px 0px 100px 0px;
+    
+}
+
+.meet .row img{
+    border: 5px #fff solid;
+    box-shadow: 0px 0px 20px #c4c4c3;
+}
+
+.meet .row  h6{
+    color: #c08943;
+    font-size: 18px;
+    
+}
+.meet .row p{
+    font-size: 16px;
+    
+}
+.meet .fotul{
+    margin-top: 10px;
+}
+
+
+
+
+footer{
+    background-color: #6fd0f3;
+    height: 100px;
+}
+
+footer .fotul{
+    margin-top: 30px;
+}
+.fotul li{
+    list-style: none;
+    border-radius: 50%;
+    float: left;
+    margin:0px 5px;;
+}
+
+.fotul li:nth-of-type(1){
+    padding:5px 17px;
+    background-color: #3b5998;
+    
+}
+.fotul li:nth-of-type(2){
+    padding: 5px 10px;
+    background-color: #55acee;
+}
+.fotul li:nth-of-type(3){
+    padding: 5px 15px;
+    background-color: #55acee;
+}
+.fotul li:nth-of-type(4){
+    padding: 5px 8px;
+    background-color: #3b5998;
+}
+.fotul li:nth-of-type(5){
+    padding: 5px 17px;
+    background-color: #55acee;
+}
+
+footer p{
+    color: #fff;font-size: 17px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    .our .says{
+        width: 100%;
+        padding: 5% 2%;
+    }
+    
+    .our h1{
+        font-size: 30px;
+    }
+    
+    .banner .swiper-slide{
+        height: 200px;
+        background-size: cover;
+    }
+    
+    .main1 .row div h3{
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .main1 .row div p{
+        margin-top: 0px;
+        letter-spacing: 0px;
+    }
+    
+    .banner h1{
+        font-size: 30px;
+        line-height: 176px;
+        padding: 0;
+    }
+    
+    
+    header .row .input{
+        display: none;
+    }
+    
+    header .navbar-form {
+
+        display: none;
+    }
+
+}

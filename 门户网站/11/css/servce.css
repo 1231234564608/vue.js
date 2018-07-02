@@ -1,0 +1,375 @@
+
+
+a{
+    text-decoration: none;
+}
+
+.main,.heads{
+    background-color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+header .container,header .navbar-collapse{
+    padding-left: 8px;
+    padding-right: 0px;
+}
+
+header .container > .navbar-header{
+    margin-right: 0px;
+}
+
+header .navbar{
+    border: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    min-height: 100px;
+}
+
+header .navbar-default {
+    background-color: #50bce4;
+}
+
+
+header .navbar-default .navbar-nav{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+header .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+}
+
+header .navbar-default .navbar-nav > .active > a,header .navbar-default .navbar-nav > .active > a:hover{
+    color: #000;
+    background-color: transparent; 
+
+}
+
+
+header .navbar-brand {
+    height: 100px;
+    padding: 0;
+}
+
+header .navbar-form p{
+    float: left;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+header .navbar-form p span{
+    color: #000;
+}
+
+header .navbar-form .form-control {
+    background-color: transparent;
+    width: 200px;
+    border: 1px #fff solid;
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.banner img{
+    width: 100%;
+}
+.banner .swiper-slide{
+    background-image: url(../images/banner1.jpg);
+    height: 225px;
+    position: relative;
+}
+.banner h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    font-family:Corbel;
+    z-index: 10;
+    text-align: center;
+    padding: 40px 0px;
+    letter-spacing: 6px;
+}
+
+
+
+
+
+.main1{
+    margin-bottom: 50px;
+}
+
+.main1 h1,.ties h1,.our h1,.offers>div>h1,.sub>div>h1{
+    text-align: center;
+    font-size: 40px;
+    color: #00a3e4;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    
+}
+
+.main1 .row div img{
+    width: 100%;
+    box-shadow: 5px 5px 20px #000;
+    border: 10px #fff solid;
+}
+
+
+.main1 ul{
+    padding-left: 20px;
+}
+.main1 ul li .fk{
+    width: 20px;
+    height: 50px;
+    box-shadow: 0px 0px 10px #000;
+    float: left;
+}
+.main1 ul li p{
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #c4c4c3;
+    margin-left: 80px;
+    margin-bottom: 35px;
+}
+
+
+
+
+
+.ties .row>div>div{
+    border: 10px #fff solid;
+    box-shadow: 0px 0px 10px #959798;
+    padding: 20px 0px;
+}
+
+.ties .row div i{
+    width: 100px;height: 100px;
+    border-radius: 50%;
+    background-color: #6fd0f3;
+    font-size: 25px;
+    color: #fff;
+    line-height: 100px;
+}
+.ties .row div h5{
+    font-size: 20px;
+    
+}
+.ties .row div p{
+    color: #969696;
+    line-height: 25px;
+    
+}
+
+
+
+
+
+.our .row div{
+    padding: 8px;
+}
+
+.our .row div img{
+    width: 100%;
+    height: 235px;
+    border: 10px #fff solid;
+    box-shadow: 0px 0px 15px #e0e0e0;
+}
+
+
+.our div h1,.offers>div>h1,.sub>div>h1{
+    margin-bottom: 20px;
+}
+
+.our div p,.offers>div>p,.sub>div>p{
+    font-size: 18px;
+    color: #969696;
+    text-align: center;
+}
+
+
+
+
+.offers .row {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.offers .row div .com{
+    border: 2px #6fd0f3 solid;
+    text-align: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.offers .row div .com p{
+    text-align: left;
+    line-height: 30px;
+    color: #7e7f82;
+}
+.offers .row div .com h2{
+    color: #53c6f1;
+}
+
+.offers .dis{
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 20px #000;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    bottom: -40%;
+    left: 35%;
+    padding: 10px;
+}
+
+.offers .dis h1{
+    color: #6dcdf1;
+}
+
+.offers .dis h6{
+    font-size: 16px;
+}
+
+
+.sub{
+    background-color: #eeeeee;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sub .input{
+    text-align: center;
+}
+.sub .input input{
+    width: 30%;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #eeeeee;
+    border: 1px #969696 solid;
+}
+.sub .input button{
+    width: 12%;
+    height: 40px;
+    color: #fff;
+    background-color: #55acc9;
+    border: 1px #969696 solid;
+    border-radius: 5px;
+    outline:none;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #6fd0f3;
+    height: 100px;
+}
+
+footer .fotul{
+    margin-top: 30px;
+}
+.fotul li{
+    list-style: none;
+    border-radius: 50%;
+    float: left;
+    margin:0px 5px;;
+}
+
+.fotul li:nth-of-type(1){
+    padding:5px 17px;
+    background-color: #3b5998;
+    
+}
+.fotul li:nth-of-type(2){
+    padding: 5px 10px;
+    background-color: #55acee;
+}
+.fotul li:nth-of-type(3){
+    padding: 5px 15px;
+    background-color: #55acee;
+}
+.fotul li:nth-of-type(4){
+    padding: 5px 8px;
+    background-color: #3b5998;
+}
+.fotul li:nth-of-type(5){
+    padding: 5px 17px;
+    background-color: #55acee;
+}
+
+footer p{
+    color: #fff;font-size: 17px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+@media (max-width: 480px){
+    
+   .sub .input button{
+        width: 30%;
+       float: left;
+    }
+
+    .sub .input input{
+        width: 70%;
+        float: left;
+    }
+    
+    
+    .offers .row div .com{
+       margin-bottom: 130px;
+    }
+    
+    .ties .row>div>div{
+        margin: 7px;
+    }
+    .main1 ul li{
+        float: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .main1 ul li p{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    
+    .banner .swiper-slide{
+        height: 200px;
+        background-size: cover;
+    }
+    
+    .banner h1{
+        font-size: 30px;
+        line-height: 176px;
+        padding: 0;
+    }
+    
+    header .row .input{
+        display: none;
+    }
+    
+    header .navbar-form {
+
+        display: none;
+    }
+
+}
