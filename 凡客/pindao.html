@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   <link rel="shortcut icon" href="img/logo.jpg">-->
+    <meta charset="UTF-8">
+    
+    <title>凡客vancl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="pindao">
+  
+   <nav>
+        <ul>
+            <li><a href="fanke.html"><i class="fa fa-home"></i><span>凡客</span></a></li>
+            <li><a href="fenlei.html"><i class="fa fa-list"></i><span>分类</span></a></li>
+            <li class="active"><a href="pindao.html"><i class="fa fa-tv"></i><span>频道</span></a></li>
+            <li><a href="Shopping%20.html"><i class="fa fa-shopping-cart"><span class="hot">0</span></i><span>购物车</span></a></li>
+            <li><a href="me.html"><i class="fa fa-user"></i><span>我的</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="fenlei-header clearfix">
+       <a href="fenlei.html"><img src="img/fenlei/left.png"></a>
+       <h5>频道</h5>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/1.png">
+           <div class="tit clearfix">
+               <h6>T恤</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/2.png">
+           <div class="tit clearfix">
+               <h6>商务衬衫</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/3.png">
+           <div class="tit clearfix">
+               <h6>休闲衬衫</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/4.png">
+           <div class="tit clearfix">
+               <h6>外套</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/5.png">
+           <div class="tit clearfix">
+               <h6>C9</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/6.png">
+           <div class="tit clearfix">
+               <h6>鞋子</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/7.png">
+           <div class="tit clearfix">
+               <h6>针织衫</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/8.png">
+           <div class="tit clearfix">
+               <h6>裤装</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/9.png">
+           <div class="tit clearfix">
+               <h6>童装</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/10.png">
+           <div class="tit clearfix">
+               <h6>POLO</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/11.png">
+           <div class="tit clearfix">
+               <h6>家居生活</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+    
+    <div id="img">
+       <div class="pin">
+           <img src="img/pindao/12.png">
+           <div class="tit">
+               <h6>内衣袜品</h6>
+               <p><a href="#">点击查看</a></p>
+           </div>
+       </div>
+    </div>
+  
+    
+      <div id="like" class="cnxh">
+        <div class="container">
+            <div class="bt"><h3>猜你喜欢</h3></div>
+            <div class="row">
+                <div class="col-xs-6 two" v-for="arr in arrs">
+                    <a href="#"><img :src="arr.img"></a>
+                    <p>{{arr.price1}}</p>
+                    <h5>{{arr.price3}}<del>{{arr.price4}}</del>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   
+<div id="list"></div>
+<div id="like"></div>
+<div id="gong"></div>
+<script src="bootstrap-3.3.4-dist/js/jquery-1.11.1.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   <link rel="shortcut icon" href="img/logo.jpg">-->
+    <meta charset="UTF-8">
+    
+    <title>凡客vancl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="me">
+  
+   <nav>
+        <ul>
+            <li><a href="fanke.html"><i class="fa fa-home"></i><span>凡客</span></a></li>
+            <li><a href="fenlei.html"><i class="fa fa-list"></i><span>分类</span></a></li>
+            <li><a href="pindao.html"><i class="fa fa-tv"></i><span>频道</span></a></li>
+            <li><a href="Shopping%20.html"><i class="fa fa-shopping-cart"><span class="hot">0</span></i><span>购物车</span></a></li>
+            <li class="active"><a href="me.html"><i class="fa fa-user"></i><span>我的</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="fenlei-header">
+       <a href="pindao.html"><img src="img/fenlei/left.png"></a>
+       <h5>个人中心</h5>
+    </div>
+    
+    <div class="geren">
+        <div class="bgcolor">
+            <div class="nei text-center">
+               <div class="cog"><a href="#"><i class="fa fa-cog"></i></a></div>
+                <img src="img/me/2.jpg">
+                <h6><a href="denglu.html"><span>登录</span> <span>注册</span></a></h6>
+                <p><a href="denglu.html"><img src="img/me/3.png">普通会员</a></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4">积分：<span>0</span></div>
+                        <div class="col-xs-4">余额：<span>0</span></div>
+                        <div class="col-xs-4">成长值：<span>0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="container"> 
+           <div class="dd">
+                <a href="denglu.html">
+                    <h6>全部订单 <span class="clearfix"><i class="fa fa-chevron-right"></i></span></h6>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 text-center">
+                    <a href="#"><img src="img/me/tu1.png">
+                    <h6>进行中</h6></a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#"><img src="img/me/tu2.png">
+                    <h6>已完成</h6></a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#"><img src="img/me/tu3.png">
+                    <h6>待评价</h6></a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#"><img src="img/me/tu4.png">
+                    <h6>无效</h6></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tion" id="gong">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 text-center" v-for="tio in tion">
+                    <a href="#">
+                         <img :src="tio.img">
+                         <h6>{{tio.price}}</h6>
+                         <span>{{tio.price1}}</span>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+ 
+
+    
+
+    
+<div id="like" class="cnxh">
+    <div class="container">
+        <div class="bt"><h3>为你推荐</h3></div>
+        <div class="row">
+            <div class="col-xs-6 two" v-for="arr in arrs">
+                <a href="#"><img :src="arr.img"></a>
+                <p>{{arr.price1}}</p>
+                <h5>{{arr.price3}}<del>{{arr.price4}}</del>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<footer>
+       <div class="en">
+        <ul class="clearfix">
+            <li>
+               <a href="#"><img src="img/tubiao/footer1.png"></a>
+               <h6>帮助</h6> 
+            </li>
+            <li>
+                <a href="#"><img src="img/tubiao/footer2.png"></a>
+               <h6>帮助</h6> 
+            </li>
+            <li>
+                <a href="#"><img src="img/tubiao/footer3.png"></a>
+               <h6>帮助</h6>
+            </li>
+            <li>
+                <a href="#"><img src="img/tubiao/footer4.png"></a>
+               <h6>帮助</h6>
+            </li>
+        </ul>
+    </div>
+        <p class="text-center">京ICP证100557号</p>
+    
+</footer>     
+<div id="list"></div>
+<div id="gong"></div>
+<script src="bootstrap-3.3.4-dist/js/jquery-1.11.1.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
