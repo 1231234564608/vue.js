@@ -78,8 +78,93 @@ ul{
 }
 
 
-
 /*首页广告图*/
+
+
+/*搜索弹出框*/
+
+.sousuo{
+    display: none;
+}
+
+.sousuo a{
+    color: #fff;
+}
+
+.sousuo .fk,.sousuo .fk1{
+    width: 100%;
+    position: fixed;
+    background:rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+.sousuo .fk1{
+   top: 78px;
+}
+
+.sousuo .fk1>div{
+    overflow: scroll;
+}
+
+.sousuo .fk1>div::-webkit-scrollbar{
+    display: none;
+}
+
+.sousuo .fk1 p {
+    color: #fff;
+    margin: 10px;
+}
+
+.sousuo .fk1 ul{
+    width: 800px;
+}
+
+.sousuo .fk1 ul li{
+    float: left;
+    width: 80px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+.sousuo .fk{
+    border-top: 2px #fff solid;
+    padding: 10px 0px;
+    height: 550px;
+    bottom: 0px;
+}
+
+.sousuo .fk p{
+    text-align: center;
+}
+
+.sousuo .fk h6{
+    font-size: 15px;
+    color: #aaa;
+}
+
+.sousuo .fk p a{
+    border: 1px #fff solid;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*搜索弹出框*/
+
+
+
+
+
+
 
 
 /*导航条*/

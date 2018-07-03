@@ -381,12 +381,20 @@ if(lis[0]!==undefined){
  
 
 
+//搜索弹出框
 
+var sousuo=document.querySelector(".sousuo");
 
+var inputt=document.querySelector(".search .left input");
 
+var fk=document.querySelector(".sousuo .fk");
+    inputt.onclick=function(){
+        sousuo.style.display="block";
+    }
 
-
-
+    fk.onclick=function(){
+        sousuo.style.display="none";
+    }
 
 
 
