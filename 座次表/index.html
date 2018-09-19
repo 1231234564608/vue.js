@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>座次表</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top text-center">
+            <i class="fa fa-users"></i>
+            <h4>座位表</h4>
+        </div>
+        <div class="tishi">
+            <p class="appear"><i class="fa fa-caret-down"></i>使用提示</p>
+            <p class="disappear"><a href="#">点击学员信息可以来回切换效果；</a></p>
+            <div class="tai">
+                <div class="yi"></div>
+                <div class="er"><h6>座位</h6></div>
+                <div class="san"></div>
+            </div>
+        </div>
+        
+        <div class="zus" id="xues">
+           <div class="row">
+               <div class="col-md-3">
+                  <h6>1组</h6>
+                   <ul>
+                     <li class="zuss clearfix"  v-for="zu in zus">
+                        <img :src="zu.img">
+                        <i class="fa fa-tv"><span>{{zu.price}}</span></i>
+                        <p>{{zu.price1}}</p>
+                     </li>
+                   </ul>
+               </div>
+               <div class="col-md-3">
+                  <h6>2组</h6>
+                   <ul>
+                     <li class="zuss clearfix"  v-for="zu2 in zus2">
+                        <img :src="zu2.img">
+                            <i class="fa fa-tv"><span>{{zu2.price}}</span></i><span>{{zu2.price3}}</span>
+
+                        <p>{{zu2.price1}}</p>
+                     </li>
+                   </ul>
+               </div>
+               <div class="col-md-3">
+                  <h6>3组</h6>
+                   <ul>
+                     <li class="zuss clearfix"  v-for="zu3 in zus3">
+                        <img :src="zu3.img">
+                        <i class="fa fa-tv"><span>{{zu3.price}}</span></i>
+                        <span>{{zu3.price3}}</span>
+                        <p>{{zu3.price1}}</p>
+                     </li>
+                   </ul>
+               </div>
+               <div class="col-md-3">
+                  <h6>4组</h6>
+                   <ul>
+                     <li class="zuss clearfix"  v-for="zu4 in zus4">
+                        <img :src="zu4.img">
+                        <i class="fa fa-tv"><span>{{zu4.price}}</span></i>
+                        <span>{{zu4.price3}}</span>
+                        <p>{{zu4.price1}}</p>
+                     </li>
+                   </ul>
+               </div>
+        </div>
+        
+        <div class="tai">
+            <div class="yi"></div>
+            <div class="er"><h6>讲台</h6></div>
+            <div class="san"></div>
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
+<script src="bootstrap-3.3.4-dist/js/jquery-1.11.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
