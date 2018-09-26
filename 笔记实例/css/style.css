@@ -1,0 +1,30 @@
+
+
+.ds{
+    margin-top: 50px;
+}
+.ds>div,.tow img{
+    float: left;
+}
+.one{
+    width: 40%;
+    border-bottom:1px #000 solid;
+}
+.tow{
+    width: 16%;
+    margin: -10px 22px 0px 22px;
+}
+.tow img{
+    margin: 0px 10px;
+}
+.three{
+    width: 40%;
+    border-bottom:1px #000 solid;
+}
+
+
+
+
+
+
+
